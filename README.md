@@ -18,7 +18,7 @@ KCCSS is similar to the Common Vulnerability Scoring System (CVSS), the industry
 
 ## Quickstart
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/octarinesec/kube-scan/master/kube-scan.yaml
+kubectl apply -f https://raw.githubusercontent.com/jonasbuehrle/kube-scan/master/kube-scan.yaml
 kubectl port-forward --namespace kube-scan svc/kube-scan-ui 8080:80
 ```
 
@@ -27,7 +27,7 @@ Then set your browser to `http://localhost:8080`.
 ## Using a load-balancer service
 * This method assumes you are using a cloud provider that provides load balancers.
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/octarinesec/kube-scan/master/kube-scan-lb.yaml
+kubectl apply -f https://raw.githubusercontent.com/jonasbuehrle/kube-scan/master/kube-scan-lb.yaml
 ```
 Then get the load-balancer address by
 ```bash
@@ -88,12 +88,12 @@ Apply the desired yaml and use "quick start" or "using load-balancer" instructio
 
 ## Uninstall
 ```bash
-kubectl delete -f https://raw.githubusercontent.com/octarinesec/kube-scan/master/kube-scan.yaml
+kubectl delete -f https://raw.githubusercontent.com/jonasbuehrle/kube-scan/master/kube-scan.yaml
 ```
 
 In case of using a load-balancer:
 ```bash
-kubectl delete -f https://raw.githubusercontent.com/octarinesec/kube-scan/master/kube-scan-lb.yaml
+kubectl delete -f https://raw.githubusercontent.com/jonasbuehrle/kube-scan/master/kube-scan-lb.yaml
 ```
 
 # Screenshots
